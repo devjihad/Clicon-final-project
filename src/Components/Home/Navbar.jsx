@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import Container from '../../Layout/Container';
 import { ImCross } from "react-icons/im";
 import facebook from '../../assets/Facebook.png'
@@ -10,6 +10,11 @@ import user from '../../assets/User.png'
 import cart from '../../assets/ShoppingCartSimple.png'
 import heart from '../../assets/Vector.png'
 import search from '../../assets/MagnifyingGlass.png'
+import { FaChevronDown } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaCodeCompare } from "react-icons/fa6";
+import { FaHeadphonesSimple } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
     const [value, setvalue] = useState(false)
@@ -69,6 +74,27 @@ const Navbar = () => {
                 </div>
                    </div>
                 </Container>
+            </div>
+
+
+            {/* FORTH */}
+
+
+            <div>
+                <Container>
+                    <div className='flex justify-between py-2 '>
+                        <div className='flex gap-2'>
+                            <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'>All Category <FaChevronDown/></p>
+                            <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'> <FaLocationDot/> Track Order</p>
+                            <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'> <FaCodeCompare/> Compare</p>
+                            <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'> <FaHeadphonesSimple/> Customar Support</p>
+                        </div>
+                        <div>
+                            <p className='flex  items-center gap-1'><FaPhoneAlt/> +8801306561609</p>
+                        </div>
+                    </div>
+                </Container>
+                <hr className='text-gray-500' />
             </div>
 
         </div>

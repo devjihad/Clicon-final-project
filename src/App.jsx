@@ -1,10 +1,11 @@
 import React from 'react';
-import Navbar from './Components/Home/Navbar';
+import Home from './Components/Home/Home';
 
 const App = () => {
   return (
     <div className='font-sans'>
-      <Navbar></Navbar>
+     
+      <Home/>
     </div>
   );
 };
