@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../../Layout/Container';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import img1 from '../../assets/Image (3).png'
+import img1 from '../../assets/Image 3.png'
 import img2 from '../../assets/image 5.png'
 import img3 from '../../assets/image 4.png'
 import headphone from '../../assets/Headphones.png'

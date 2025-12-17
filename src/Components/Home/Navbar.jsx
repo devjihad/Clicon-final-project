@@ -82,7 +82,7 @@ const Navbar = () => {
 
             <div>
                 <Container>
-                    <div className='flex justify-between py-2 '>
+                    <div className='flex justify-between items-center py-2 '>
                         <div className='flex gap-2'>
                             <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'>All Category <FaChevronDown/></p>
                             <p className='flex gap-1 items-center p-2 rounded-sm hover:bg-gray-300'> <FaLocationDot/> Track Order</p>

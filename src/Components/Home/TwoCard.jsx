@@ -1,14 +1,14 @@
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import newapple from '../../assets/image 6.png'
-import xiaomi from '../../assets/Image (3).png'
+import xiaomi from '../../assets/Image 7.png'
 import Container from '../../Layout/Container';
 const TwoCard = () => {
     return (
         <div>
            <Container>
-             <div className='flex justify-between gap-5'>
-                <div className='w-1/2 flex justify-center gap-5 p-6 bg-gray-100'>
+             <div className='flex justify-between gap-5 mt-12'>
+                <div className='w-1/2 flex justify-center gap-5 p-6 bg-gray-100 rounded-sm'>
                 <div className='mt-4'>
                 <p className='text-[14px] font-semibold bg-[#2DA5F3] px-4 py-2 inline text-white rounded-sm'>INTRODUCING</p>
                 <p className='text-[32px] font-semibold leading-9 my-3'>New Apple <br /> Homepod Mini</p>
@@ -22,7 +22,7 @@ const TwoCard = () => {
 
 
 
-                <div className='w-1/2 flex justify-center   bg-black'>
+                <div className='w-1/2 flex justify-center bg-black rounded-sm'>
                 <div className='mt-4 p-5 pr-0'>
                 <p className='text-[14px] font-semibold bg-[#EFD33D] px-4 py-2 inline text-white rounded-sm'>INTRODUCING NEW</p>
                 <p className='text-[28px] font-semibold leading-9 my-3 text-white'>Xiaomi Mi 11 Ultra <br />
