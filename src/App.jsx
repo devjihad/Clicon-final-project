@@ -4,7 +4,7 @@ import Home from './Components/Home/Home';
 import Routerr from './Components/Routing/Routerr';
 const App = () => {
   return (
-    <div className='font-sans'>
+    <div className='font-pullic'>
      
       <Routerr/>
     </div>

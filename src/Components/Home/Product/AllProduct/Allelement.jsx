@@ -11,7 +11,7 @@ const Allelement = ({item}) => {
     // console.log(item)
      return (
             <Container>
-                <div className='w-[23%] h-[350px] p-2 border-2  border-gray-200 mb-[15px] rounded-lg'>
+                <div className='w-[23%] h-[370px] p-2 border-2  border-gray-200 mb-[15px] rounded-lg'>
                     <img src={item.product_name} alt="" className='w-[250px] h-[200px]'/>
                     <div className='flex gap-1'><FaStar className='text-[#FA8232]'/><FaStar className='text-[#FA8232]'/><FaStar className='text-[#FA8232]'/><FaStar className='text-[#FA8232]'/><FaStar className='text-[#FA8232]'/></div>
                     <h3 className='text-[18px] font-semibold mt-3'>{item.product_title}</h3>
