@@ -4,6 +4,7 @@ import logo from '../../../assets/Logo.png'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import apple from '../../../assets/Apple.png'
 import play from '../../../assets/Play.png'
+import { Link } from 'react-router';
 const Footer = () => {
     return (
         <div className='bg-black'>
@@ -11,7 +12,7 @@ const Footer = () => {
                 <div className='flex gap-5 justify-between py-14'>
 
                 <div>
-                    <img className='mb-4' src={logo} alt="" />
+                    <Link to={'/'}><img className='mb-4' src={logo} alt="" /></Link>
                     <h3 className='text-gray-400'>Customar Service</h3>
                     <p className='text-white mb-2'>+8801306561609</p>
                     <p className='text-gray-400 mb-2'>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>

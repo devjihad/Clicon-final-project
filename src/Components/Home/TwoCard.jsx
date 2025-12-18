@@ -3,6 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import newapple from '../../assets/image 6.png'
 import xiaomi from '../../assets/Image 7.png'
 import Container from '../../Layout/Container';
+import { Link } from 'react-router';
 const TwoCard = () => {
     return (
         <div>
@@ -13,7 +14,7 @@ const TwoCard = () => {
                 <p className='text-[14px] font-semibold bg-[#2DA5F3] px-4 py-2 inline text-white rounded-sm'>INTRODUCING</p>
                 <p className='text-[32px] font-semibold leading-9 my-3'>New Apple <br /> Homepod Mini</p>
                 <p className='text-4 text-[#475156] my-3'>Jam-packed with innovation, <br /> HomePod mini delivers unexpectedly.</p>
-                <button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button>
+               <Link to={'/product'}> <button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button></Link>
                 </div>
                 <div>
                     <img src={newapple} alt="" />
@@ -28,7 +29,7 @@ const TwoCard = () => {
                 <p className='text-[28px] font-semibold leading-9 my-3 text-white'>Xiaomi Mi 11 Ultra <br />
                 12GB+256GB</p>
                 <p className='text-4 text-[#475156] my-3'>Data provided by internal <br /> laboratories. Industry measurment.</p>
-                <button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button>
+                <Link to={'/product'}><button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button></Link>
                 </div>
                 <div className='relative'>
                     <img className='mt-4' src={xiaomi} alt="" />

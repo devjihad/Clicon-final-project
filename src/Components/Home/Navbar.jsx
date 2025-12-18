@@ -15,10 +15,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaCodeCompare } from "react-icons/fa6";
 import { FaHeadphonesSimple } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const [value, setvalue] = useState(false)
-    console.log(value)
     const data=()=>{
         setvalue(!value)
     }
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className='flex justify-between text-white relative' >
                 <p><span className='bg-yellow-200 px-2 rounded-tr-lg rounded-bl-lg text-black'>Black</span> Friday</p>
                 <p>upto <span className='text-yellow-200 text-[17px] font-semibold'>50%</span> off</p>
-                <button className='bg-yellow-200 px-3  text-black rounded-lg font-semibold' >SHOP NOW</button>
+                <Link to={'/product'}><button className='bg-yellow-200 px-3  text-black rounded-lg font-semibold' >SHOP NOW</button></Link>
                 </div>
                 <h3 className='text-white absolute top-3 right-8' onClick={()=>data()}><ImCross/></h3>
             </Container>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <div className='bg-[#1B6392]'>
                 <Container>
                    <div className='flex justify-between py-4'>
-                     <img className='h-12' src={logo} alt="" />
+                     <Link to={'/'}><img className='h-12' src={logo} alt="" /></Link>
                 <div className='flex relative'>
                     <input className='w-150 h-12 bg-white text-black border-0 outline-0 px-3 rounded-sm' type="text" placeholder='Search for anything'/>
                     <img className='h-12 w-12 absolute  right-2' src={search} alt="" />

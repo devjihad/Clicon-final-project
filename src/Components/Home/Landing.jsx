@@ -8,6 +8,7 @@ import headphone from '../../assets/Headphones.png'
 import cart from '../../assets/CreditCard.png'
 import trophy from '../../assets/Trophy.png'
 import box from '../../assets/Package.png'
+import { Link } from 'react-router';
 const Landing = () => {
     return (
         <div> 
@@ -20,7 +21,7 @@ const Landing = () => {
                     <p className='text-[#2484C2] text-3.5 font-semibold'>THE BEST PLACE TO PLAY</p>
                     <h2 className='text-[48px] font-semibold'>Xbox Consoles</h2>
                     <p className='text-4.5 text-gray-700 mb-3'>Save up to 50% on select Xbox games. Get <br /> 3 months of PC Game Pass for $2 USD.</p>
-                    <button className='bg-[#FA8232] text-4 font-semibold flex items-center gap-1 px-3 py-1 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button>
+                    <Link to={'/product'}><button className='bg-[#FA8232] text-4 font-semibold flex items-center gap-1 px-3 py-1 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button></Link>
                 </div>
                 <div className='relative'>
                     <img className='w-92.5 h-100 ' src={img1} alt="" />
@@ -36,7 +37,7 @@ const Landing = () => {
                     <div className='mt-12 ml-7 w-1/2'>
                     <p className='text-[#EBC80C] text-[14px] font-semibold mb-1'>SUMMER SALCE</p>
                     <p className='text-white text-[24px] font-semibold mb-2'>New Google <br /> Pixel 6 Pro</p>
-                    <button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button>
+                    <Link to={'/product'}><button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button></Link>
                     </div>
                     <div className='w-1/2 relative'>
                         <img className='mt-12 w-[230px] h-[192px]' src={img2} alt="" />
@@ -50,7 +51,7 @@ const Landing = () => {
                     <div className='pr-5'>
                         <p className='text-[24px] font-semibold mb-2'>Xiaomi <br /> FlipBuds Pro</p>
                         <p className='text-[#2DA5F3] text-[18px] font-semibold mb-1'>$299 USD</p>
-                        <button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button>
+                        <Link to={'/product'}><button className='bg-[#FA8232] text-[14px] font-semibold flex items-center gap-1 px-5 py-2 text-white rounded-sm'>Shop Now <IoIosArrowRoundForward/> </button></Link>
                     </div>
                 
 
