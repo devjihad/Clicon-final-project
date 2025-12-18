@@ -70,7 +70,7 @@ const Navbar = () => {
                 <div className='flex gap-2'>
                     <img className='h-10 w-10' src={cart} alt="" />
                     <img className='h-10 w-10' src={heart} alt="" />
-                    <img className='h-10 w-10' src={user} alt="" />
+                    <Link to={'/signup'}><img className='h-10 w-10' src={user} alt="" /></Link>
                 </div>
                    </div>
                 </Container>
